@@ -1,0 +1,16 @@
+{
+  "name": "curso-pswe-07",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "python3 -m http.server 4173 --directory src",
+    "lint": "eslint src tests eslint.config.js playwright.config.js",
+    "test": "node --test",
+    "test:acceptance": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "eslint": "^10.13.0"
+  }
+}
